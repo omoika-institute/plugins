@@ -1,0 +1,19 @@
+import omoika
+from omoika.elements import TextInput
+
+
+class Harbor(omoika.Plugin):
+    version = "1.0.0"
+    label = "Harbor"
+    category = ["Locations", "Transportation"]
+    color = "#38BDF899"
+    icon = "anchor"
+    author = "omoika"
+    description = "Represent a harbor or port location."
+
+    elements = [
+        TextInput(label="Name", icon="anchor"),
+        TextInput(label="City", icon="building"),
+        TextInput(label="Country", icon="flag"),
+    ]
+

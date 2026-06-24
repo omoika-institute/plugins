@@ -1,0 +1,19 @@
+import omoika
+from omoika.elements import TextInput
+
+
+class BadGuy(omoika.Plugin):
+    version = "1.0.0"
+    label = "Bad Guy"
+    category = "Identity"
+    color = "#EF444499"
+    icon = "user-minus"
+    author = "omoika"
+    description = "Represent a suspect or hostile individual."
+
+    elements = [
+        TextInput(label="Name", icon="user"),
+        TextInput(label="Alias", icon="mask"),
+        TextInput(label="Affiliation", icon="users"),
+    ]
+

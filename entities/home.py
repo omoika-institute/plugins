@@ -1,0 +1,19 @@
+import omoika
+from omoika.elements import TextInput
+
+
+class Home(omoika.Plugin):
+    version = "1.0.0"
+    label = "Home"
+    category = "Locations"
+    color = "#FDE04799"
+    icon = "home"
+    author = "omoika"
+    description = "Represent a residence address."
+
+    elements = [
+        TextInput(label="Address", icon="home"),
+        TextInput(label="City", icon="building"),
+        TextInput(label="Country", icon="flag"),
+    ]
+

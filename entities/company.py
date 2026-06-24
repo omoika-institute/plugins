@@ -1,0 +1,19 @@
+import omoika
+from omoika.elements import TextInput
+
+
+class Company(omoika.Plugin):
+    version = "1.0.0"
+    label = "Company"
+    category = "Organizations"
+    color = "#F59E0B99"
+    icon = "building"
+    author = "omoika"
+    description = "Represent a company or organization entry."
+
+    elements = [
+        TextInput(label="Name", icon="building"),
+        TextInput(label="Domain", icon="world-www"),
+        TextInput(label="Country", icon="flag"),
+    ]
+

@@ -1,0 +1,19 @@
+import omoika
+from omoika.elements import TextInput
+
+
+class ReligiousGroup(omoika.Plugin):
+    version = "1.0.0"
+    label = "Religious Group"
+    category = "Organizations"
+    color = "#22C55E99"
+    icon = "building-church"
+    author = "omoika"
+    description = "Represent a religious group."
+
+    elements = [
+        TextInput(label="Name", icon="building-church"),
+        TextInput(label="Country", icon="flag"),
+        TextInput(label="Denomination", icon="tag"),
+    ]
+
